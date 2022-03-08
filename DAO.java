@@ -1,0 +1,13 @@
+import java.util.*;
+
+/**
+ * Data Access Object implemented by the ProductTextFile class
+ */
+
+public interface DAO<T> {
+    T get(String code);
+    List<T> getAll();
+    boolean add(T t);
+    boolean update(T t);
+    boolean delete(T t);
+}
